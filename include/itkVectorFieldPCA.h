@@ -78,7 +78,7 @@ public:
   /**
   * \brief Evaluate the function. Input is the squared distance
   */
-  inline double Evaluate (const double& u) const
+  inline double Evaluate (const double& u) const ITK_OVERRIDE
     { return ( vcl_exp( u * m_OneOverMinusTwoSigmaSqr )); }
 
 protected:
