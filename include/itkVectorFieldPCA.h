@@ -83,8 +83,8 @@ public:
 
 protected:
   GaussianDistanceKernel() {}
-  ~GaussianDistanceKernel() {}
-  void PrintSelf(std::ostream& os, Indent indent) const
+  ~GaussianDistanceKernel() ITK_OVERRIDE {}
+  void PrintSelf(std::ostream& os, Indent indent) const ITK_OVERRIDE
     { Superclass::PrintSelf( os, indent ); }
 
 private:
@@ -194,8 +194,8 @@ public:
 
 protected:
   VectorFieldPCA();
-  virtual ~VectorFieldPCA() {};
-  void PrintSelf(std::ostream& os, Indent indent) const;
+  ~VectorFieldPCA() ITK_OVERRIDE {};
+  void PrintSelf(std::ostream& os, Indent indent) const ITK_OVERRIDE;
 
   /** Kernel PCA. */
   void KernelPCA();
