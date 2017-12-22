@@ -49,9 +49,7 @@ int main( int argc, char *argv[] )
   typedef itk::Vector<PointDataType>  OutPointDataVectorType;
   typedef OutPointDataVectorType      OutPixelType;
 
-  typedef double             DDataType;
   typedef double             CoordRep;
-  typedef double             InterpRep;
   const   unsigned int       Dimension = 3;
 
 //    typedef float              PCAResultsType;
