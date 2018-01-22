@@ -78,13 +78,13 @@ public:
   /**
   * \brief Evaluate the function. Input is the squared distance
   */
-  inline double Evaluate (const double& u) const
+  inline double Evaluate (const double& u) const override
     { return ( vcl_exp( u * m_OneOverMinusTwoSigmaSqr )); }
 
 protected:
   GaussianDistanceKernel() {}
-  ~GaussianDistanceKernel() {}
-  void PrintSelf(std::ostream& os, Indent indent) const
+  ~GaussianDistanceKernel() override {}
+  void PrintSelf(std::ostream& os, Indent indent) const override
     { Superclass::PrintSelf( os, indent ); }
 
 private:
@@ -194,8 +194,8 @@ public:
 
 protected:
   VectorFieldPCA();
-  virtual ~VectorFieldPCA() {};
-  void PrintSelf(std::ostream& os, Indent indent) const;
+  ~VectorFieldPCA() override {};
+  void PrintSelf(std::ostream& os, Indent indent) const override;
 
   /** Kernel PCA. */
   void KernelPCA();
