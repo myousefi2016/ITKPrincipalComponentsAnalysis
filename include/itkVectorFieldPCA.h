@@ -55,7 +55,7 @@ template< typename TRealValueType = double >
 class ITK_EXPORT GaussianDistanceKernel : public KernelFunctionBase<TRealValueType>
 {
 public:
-  /** Standard class typedefs. */
+  /** Standard class type alias. */
   using Self = GaussianDistanceKernel;
   using Superclass = KernelFunctionBase<TRealValueType>;
   using Pointer = SmartPointer<Self>;
@@ -104,7 +104,7 @@ template <
 class ITK_EXPORT VectorFieldPCA : public Object
 {
 public:
-  /** Standard class typedefs. */
+  /** Standard class type alias. */
   using Self = VectorFieldPCA;
   using Superclass = Object;
   using Pointer = SmartPointer<Self>;
